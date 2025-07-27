@@ -1,12 +1,21 @@
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-*.egg
-.env
-
-# Virtual environment folders
+# ❌ Ignore virtual environments
 venv/
 .venv/
-ENV/
 env/
+ENV/
+
+# ❌ Ignore environment variable files
+.env
+
+# ❌ Ignore Streamlit secrets (only for local dev; you should add secrets.toml manually if needed)
+.streamlit/secrets.toml
+
+# ❌ Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# ❌ Ignore VS Code settings (optional)
+.vscode/
+
+# ❌ Ignore macOS system files (if using mac)
+.DS_Store
